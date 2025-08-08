@@ -1,15 +1,4 @@
-Dưới đây là bản **README.md** phù hợp với cấu trúc và code demo Spring Modulith của bạn, bao gồm:
-
-* Giải thích chính sách (policy) khi dùng Modulith.
-* Tổng quát các chức năng trong dự án.
-* Giữ hướng viết theo dạng tài liệu kỹ thuật, nhưng vẫn dễ đọc.
-
----
-
-```markdown
 # 📦 Warehouse Modulith Demo
-
-Dự án này là ví dụ minh họa **Spring Modulith** cho hệ thống quản lý kho hàng, với kiến trúc **module-based** hướng đến khả năng **tách thành microservices trong tương lai**.
 
 ## 1️⃣ Mục tiêu của dự án
 - Trình bày cách tổ chức code dạng **Modulith**: chia ứng dụng thành các module độc lập về logic.
@@ -20,8 +9,7 @@ Dự án này là ví dụ minh họa **Spring Modulith** cho hệ thống quả
 
 ## 2️⃣ Cấu trúc dự án
 
-```
-```text
+```markdown
 com.example.warehouse
 │
 ├── application              # API layer (Controllers)
