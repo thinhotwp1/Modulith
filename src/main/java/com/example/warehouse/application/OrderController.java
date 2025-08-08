@@ -1,8 +1,6 @@
 package com.example.warehouse.application;
 
-import com.example.warehouse.inventory.InventoryService;
-import com.example.warehouse.receiving.ReceivingService;
-import com.example.warehouse.shipping.ShippingService;
+import com.example.warehouse.order.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/order")
 public class OrderController {
 
-    private final InventoryService inventoryService;
+    private final OrderService orderService;
 
     @PostMapping
     public void order(@RequestParam String sku, @RequestParam int qty) {
-        inventoryService.order(sku, qty);
+        orderService.order(sku, qty);
     }
 }

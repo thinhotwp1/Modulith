@@ -1,6 +1,6 @@
 package com.example.warehouse.shipping;
 
-import com.example.warehouse.common.events.OrderShippingEvent;
+import com.example.warehouse.common.events.InventoryShippingMessageEvent;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class ShippingService {
 
     @EventListener()
-    public void shipOrder(OrderShippingEvent event) {
+    public void shipOrder(InventoryShippingMessageEvent event) {
         log.info("Shipping {} of {}", event.qty(), event.sku());
     }
 }
